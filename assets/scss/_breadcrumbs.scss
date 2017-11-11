@@ -1,0 +1,44 @@
+.breadcrumbs {
+  @include rem(padding, 28px 0);
+  @include clearfix;
+
+  &_item {
+    color: #8c94a0;
+    position: relative;
+    float: left;
+
+    @include rem(font-size, 16px);
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #657180;
+      }
+    }
+
+    &--current {
+      color: #657180;
+    }
+
+    + .breadcrumbs_item {
+      @include rem(padding-left, 30px);
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: 'icon';
+        content: "\e929";
+        text-align: center;
+        line-height: normal;
+        color: #8c94a0;
+
+        @include rem(width, 30px);
+        @include rem(height, 20px);
+        @include rem(line-height, 20px);
+        @include rem(font-size, 12px);
+      }
+    }
+  }
+}
