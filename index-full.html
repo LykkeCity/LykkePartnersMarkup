@@ -1,39 +1,40 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lykke - anyone can trade</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lykke - anyone can trade</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!--[if lte IE 9]>
-      <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
-    <![endif]-->
+  <!--[if lte IE 9]>
+  <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+  <![endif]-->
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-68151354-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-68151354-1', 'auto');
+    ga('send', 'pageview');
 
-    </script>
+  </script>
 
 </head>
 <body>
@@ -158,7 +159,7 @@
             </a>
           </div>
 
-           <div class="dropdown__container">
+          <div class="dropdown__container">
             <ul class="dropdown__nav">
               <li><a href="/Home/LogOut">Sign Out</a></li>
             </ul>
@@ -185,66 +186,251 @@
   </nav>
 </div>
 
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs_item"><a href="">Documentation</a></div>
+    <div class="breadcrumbs_item"><a href="">KYC\AML checks for partners’ users</a></div>
+    <div class="breadcrumbs_item breadcrumbs_item--current"><a href="">Email Verification</a></div>
+  </div>
+</div>
+
 <article class="content">
 
   <section class="section section--padding">
     <div class="container">
 
       <div class="row">
-        <div class="col-md-10 automargin">
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <div class="text">
+            <h2>Email Verification</h2>
+            <p class="lead">
+              According to Anti Money Laundering directive Lykke has to perform KYC checks for all users trading at Lykke Exchange, including the partners users.
+            </p>
 
-          <div class="section_header">
-            <div class="row">
-              <div class="col-md-9">
-                <h1>Lykke for partners</h1>
-                <h3 class="subtitle">Tips and tools for beginners and experts alike</h3>
+            <p>KYC requirements differ from the different regions and a type of license used to onboard clients. But in most cases the following documents are required:</p>
 
-                <p class="lead">Lykke Corp welcomes its partners to integrate applications with Lykke Exchange; and provides Lykke Wallet API used by our own Lykke Wallet application along with related services for supporting the partners' users, such as email/ sms notifications as part of the functionality of Lykke Wallet API, finance operations and KYC\AML checks for the users.</p>
-                <p class="lead">The sections to follow describe available ways to deposit and withdraw funds of the partners’ users in FIAT currencies to/from Lykke Exchange, KYC\AML requirements, and a technical specification of the API:  </p>
+            <ul>
+              <li>Selfie
+                <div class="hint">Not required under UK AML law but let’s keep it for now as you state “in most cases”</div>
+              </li>
+              <li>ID or Passport or Driving license</li>
+              <li>Proof  of address</li>
+            </ul>
 
+            <p>Currently Lykke onboards clients under UK regulations that require a user to submit the documents listed above. Once Lykke obtains an OTF license in Switzerland, the onboarding procedure for Switzerland citizens will include a video validation according to FINMA rules.</p>
+            <p>All the documents and information such as name, phone number, etc. received from users are stored at  Lykke’s servers in Switzerland and available to Lykke KYC officers in Lykke backoffice.</p>
+            <p>Lykke KYC officers perform KYC checks for all partners’ users, a partner pays fee for KYC check per user to Lykke (Please see
+              <a href="">Cost of services</a>).</p>
+
+            <h3>Scenarios</h3>
+            <p>The following scenarios are possible: </p>
+            <ul>
+              <li>A user already signed up to LykkeWallet and  passed KYC check. The users signs up to a partner’s application. If a partner doesn’t have additional requirements regarding the KYC procedure, there is no need for the user to pass KYC check in the partner’s application. The partner doesn’t pay fees for the KYC check.</li>
+              <li>A user has signed up to LykkeWallet and while the KYC check on him/her is being processed the user signs up to a partner's application. The user needs to submit all the required KYC documents in the partner’s application. The partner pays fees.</li>
+              <li>A user signed up to Lykke Wallet and passed KYC check. According to KYC\AML rules after some period of time the user needs to re-submit the documents. The user has re-submitted the required documents and while the KYC check on him/her is being processed the user signs up to a partner's application. The user needs to submit all the required KYC documents in the partner’s application. The partner pays fees.</li>
+            </ul>
+
+            <blockquote>
+              <h4>Note</h4>
+              <p>Lykke KYC officers cannot change the order of users for performing KYC checks and don’t have an ability to visually recognize partners’ users from Lykke Wallet users.  </p>
+            </blockquote>
+
+            <p>Partner’s Terms of Use shall include the following statement “KYC is processed by Lykke and by accepting this clients agree to share with their data with Lykke”.</p>
+
+            <div class="text-center">
+              <ul class="nav-tabs" role="tablist">
+                <li class=" active" role="presentation">
+                  <a class="" href="#ios" aria-controls="ios" role="tab" data-toggle="tab">iOS</a>
+                </li>
+                <li class="" role="presentation">
+                  <a class="" href="#android" aria-controls="ios" role="tab" data-toggle="tab">Android</a>
+                </li>
+                <li class="" role="presentation">
+                  <a class="" href="#web" aria-controls="ios" role="tab" data-toggle="tab">Web</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="ios">
+                <pre>POST  https://ABCExchange.com/api/emailverification
+Content-Type: application/json-patch+json
+Accept: application/json
+
+{
+  "Email": "igor.samohin@lykke.com",
+  "PartnerId": $PARTNER_KEY
+}</pre>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="android">
+                <pre>POST  https://ABCExchange.com/api/emailverification
+Content-Type: application/json-patch+json
+Accept: application/json
+
+{
+  "PartnerId": $PARTNER_KEY
+}</pre>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="web">
+                <pre>POST  https://ABCExchange.com/api/emailverification
+Content-Type: application/json-patch+json
+Accept: application/json
+
+{
+  "Email": "igor.samohin@lykke.com",
+}</pre>
               </div>
             </div>
+
+
+            <p>In the event, additional KYC requirements should be in place for onboarding partners' users, Lykke may charge additional fees from the partner in order to pay KYC officers and changing Lykke Back Office.</p>
+            <p>In the event, additional KYC requirements should be in place for onboarding partners' users; Lykke may charge additional fees from the partner in order to pay KYC officers and introduce the respective changes in Lykke Back Office.  Please contact us for the cost estimates if such changes are required.</p>
+
+            <div class="landing_media_stack row">
+              <div class="col-xs-6">
+                <div class="landing_media">
+                  <img src="img/05-pic.png" width="300">
+                  <div class="hint">Lykke informs you when the transaction completes successfully.</div>
+                </div>
+              </div>
+            </div>
+
+            <p>In the event, additional KYC requirements should be in place for onboarding partners' users, Lykke may charge additional fees from the partner in order to pay KYC officers and changing Lykke Back Office.</p>
+
+            <h3>How to start using LykkeWallet?</h3>
+
+            <p>Partner’s Terms of Use shall include the following statement “KYC is processed by Lykke and by accepting this clients agree to share with their data with Lykke”.</p>
+
+            <ol class="list_styled">
+              <li>Download your free <b>Lykke Wallet</b> app for iOS or Android.</li>
+              <li>Register your <b>Lykke Wallet</b>.</li>
+              <li>Provide a photo, ID and proof of address. The app guides you through the process. Five minutes, and you’re done.</li>
+            </ol>
+
+            <h3>Useful links</h3>
+            <ul>
+              <li><a href="">Download Lykke Wallet</a></li>
+              <li><a href="">Support section</a></li>
+              <li><a href="">Frequently Asked Questions</a></li>
+            </ul>
+
           </div>
 
-          <div class="list_of_articles">
-            <div class="row">
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Available trading modes</div>
-                  <div class="list_item__text">Support of trading modes available for Lykke partners.</div>
-                </a>
+
+          <div class="content_footer">
+            <div class="action_text">Last updated on April 25, 2017</div>
+
+            <div class="share"></div>
+          </div>
+
+          <div class="block_support block_support--accent hidden-xs">
+            <div class="block_support__icon"><img src="img/support_icn.svg" width="30" height="30" alt="support"></div>
+            <div class="block_support__title">Can’t find your answer?</div>
+            <div class="hint">Contact us at: <a href="mailto:support@lykke.com" class="btn btn--flat">support@lykke.com</a></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="block_articles">
+            <div class="block_articles__title">Articles in this section</div>
+
+            <div class="list_menu" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="list_menu__item">
+                <div class="list_menu__target" role="tab" id="headingOne">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    KYC\AML checks for partners’ users
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <ul class="list_menu">
+                    <li class="list_menu__item list_menu__item--active">
+                      <a href="">Email Verification</a>
+                    </li>
+                    <li class="list_menu__item">
+                      <a href="">Registration</a>
+                    </li>
+                    <li class="list_menu__item">
+                      <a href="">PinSecurity</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Depositing funds in FIAT currency to Lykke Exchange</div>
-                  <div class="list_item__text">Options our partners have for accepting funds in FIAT currency from users in order to top up the users' wallets at Lykke Exchange.</div>
+              <div class="list_menu__item">
+                <div class="list_menu__target" role="tab" id="heading2">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    LykkeWallet API
+                  </a>
+                </div>
+                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                  <ul class="list_menu">
+                    <li class="list_menu__item">
+                      <a href="">Email Verification</a>
+                    </li>
+                    <li class="list_menu__item">
+                      <a href="">Registration</a>
+                    </li>
+                    <li class="list_menu__item">
+                      <a href="">PinSecurity</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list_menu__item">
+                <a href="">GET api/PinSecurity </a>
+              </div>
+              <div class="list_menu__item">
+                <a href="">Generating user’s address</a>
+              </div>
+              <div class="list_menu__item">
+                <a href="">Submitting user’s documents for KYC check</a>
+              </div>
+              <div class="list_menu__item">
+                <a href="">Changing application’s PIN-code or password</a>
+              </div>
+
+              <div class="cutted" id="cutted_articles">
+                <div class="list_menu__item">
+                  <div class="list_menu__target" role="tab" id="heading4">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      KYC\AML checks for partners’ users
+                    </a>
+                  </div>
+                  <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                    <ul class="list_menu">
+                      <li class="list_menu__item">
+                        <a href="">Email Verification</a>
+                      </li>
+                      <li class="list_menu__item">
+                        <a href="">Registration</a>
+                      </li>
+                      <li class="list_menu__item">
+                        <a href="">PinSecurity</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="list_menu__item">
+                  <a href="">LykkeWallet API</a>
+                </div>
+              </div>
+
+              <div class="list_menu__item list_menu__item--highlighted">
+                <a href="#cutted_articles" class="_open_cutted_content">
+                  <span class="hidden-if-active">More guides...</span>
+                  <span class="visible-if-active">Hide</span>
                 </a>
               </div>
             </div>
-            <div class="row">
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Withdraw funds in FIAT currency from Lykke Exchange</div>
-                  <div class="list_item__text">Support of trading modes available for Lykke partners.</div>
-                </a>
+
+            <div class="block_articles__title">Similar articles</div>
+            <div class="list_menu" id="accordion1" role="tablist" aria-multiselectable="true">
+              <div class="list_menu__item">
+                <a href="">Generating user’s address</a>
               </div>
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Depositing funds in FIAT currency to Lykke Exchange</div>
-                  <div class="list_item__text">Options our partners have for accepting funds in FIAT currency from users in order to top up the users' wallets at Lykke Exchange.</div>
-                </a>
+              <div class="list_menu__item">
+                <a href="">Submitting user’s documents for KYC check</a>
               </div>
-            </div>
-            <div class="row">
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Access to the users’ data</div>
-                </a>
-              </div>
-              <div class="list_item col-sm-6">
-                <a href="">
-                  <div class="list_item__title">Utilizing Lykke Wallet API and whitelabelling Lykke Wallet</div>
-                </a>
+              <div class="list_menu__item">
+                <a href="">Changing application’s PIN-code or password</a>
               </div>
             </div>
           </div>
@@ -254,7 +440,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section visible-xs">
     <div class="container">
       <div class="block_support block_support--accent">
         <div class="block_support__icon"><img src="img/support_icn.svg" width="30" height="30" alt="support"></div>
@@ -281,7 +467,7 @@
                 title="App Store"
                 target="_blank"
                 rel="noopener noreferrer"
-                >
+              >
                 <img src="img/appstore-badge.svg" width="170" alt="apps_apple">
               </a>
 
@@ -293,7 +479,7 @@
                 title="Google Play"
                 target="_blank"
                 rel="noopener noreferrer"
-                >
+              >
                 <img src="img/google-play.svg" width="170" alt="apps_google">
               </a>
             </div>
@@ -395,7 +581,6 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
-
 
 </body>
 </html>
