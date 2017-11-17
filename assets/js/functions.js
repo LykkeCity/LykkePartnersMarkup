@@ -49,6 +49,15 @@ function initEventsOnClick() {
                 $(this).attr('href').replace(/^tel:/, 'callto:'));
         });
     }
+
+  $('._open_cutted_content').on('click', function(e) {
+    e.preventDefault();
+
+    var target = $(this).attr('href')
+
+    $(target).toggleClass('show')
+    $(this).toggleClass('active')
+  })
 }
 
 function initEventsOnScroll() {

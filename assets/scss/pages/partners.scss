@@ -37,6 +37,10 @@ body {
   &.section--lead {
     @include rem(padding, 90px 0);
   }
+
+  &.section--padding {
+    @include rem(padding, 40px 0);
+  }
 }
 
 
@@ -356,6 +360,10 @@ pre {
 
   @include rem(padding-top, 25px);
   @include rem(margin, 40px 0);
+
+  + .block_support {
+    @include rem(margin-top, 100px);
+  }
 }
 
 .action_text {
@@ -364,4 +372,115 @@ pre {
   color: #8c94a0;
 
   @include rem(font-size, 16px);
+}
+
+.block_articles {
+  @include rem(padding-right, 30px);
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.35;
+    text-align: left;
+    color: #111111;
+    font-family: $ff-alt;
+    border-bottom: 1px solid $border-alt;
+
+    @include rem(font-size, 26px);
+    @include rem(padding-bottom, 18px);
+    @include rem(padding-top, 10px);
+    @include rem(margin-bottom, 14px);
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    padding-right: 0;
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    margin-top: 30px;
+  }
+}
+
+.list_menu {
+  line-height: 1.67;
+
+  @include rem(margin-bottom, 40px);
+  @include rem(font-size, 18px);
+
+  .list_menu {
+    margin-bottom: 0;
+
+    @include rem(font-size, 16px);
+    @include rem(padding-left, 20px);
+    @include rem(padding-top, 5px);
+  }
+
+  &__item {
+    @include rem(padding, 8px 30px 8px 0);
+    @include rem(margin-bottom, 4px);
+
+    a {
+      color: #657180;
+
+      @include rem(padding, 8px 0);
+
+      &[aria-expanded="true"] {
+        color: #111111;
+        font-weight: $fw-semi;
+      }
+
+      &:hover {
+        color: #111111;
+      }
+    }
+
+    .list_menu__item {
+      margin-bottom: 0;
+
+      @include rem(padding, 5px 0);
+
+      a {
+        @include rem(padding, 5px 0);
+      }
+    }
+
+    &--highlighted {
+      a {
+        color: $primary !important;
+        font-weight: $fw-semi !important;
+      }
+    }
+
+    &--active {
+      a {
+        color: #111111;
+        font-weight: $fw-semi;
+      }
+    }
+  }
+}
+
+.cutted {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
+
+._open_cutted_content {
+  .hidden-if-active {
+    display: block;
+  }
+  .visible-if-active {
+    display: none;
+  }
+
+  &.active {
+    .hidden-if-active {
+      display: none;
+    }
+    .visible-if-active {
+      display: block;
+    }
+  }
 }
