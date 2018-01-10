@@ -2,19 +2,29 @@ body {
   color: $text;
 }
 
+hr {
+  max-width: none;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ebedef;
+}
+
 .header {
   border-bottom: 0;
 }
 
 .header_logo {
+  @include rem(margin-top, -2px);
+
   &__img {
-    @include rem(margin-right, 2px);
+    margin-right: 0;
   }
 
   &__title {
     position: relative;
 
     @include rem(top, 4px);
+    @include rem(font-size, 31px);
   }
 }
 
@@ -167,21 +177,50 @@ body {
   color: inherit;
 }
 
+.hgroup {
+  @include rem(margin-bottom, 25px);
+  @include rem(margin-top, 55px);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 h1, .h1 {
   font-family: $ff-alt;
   line-height: 1;
 
   @include rem(font-size, 60px);
-  @include rem(margin-bottom, 15px);
+  @include rem(margin-bottom, 20px);
+}
+
+
+h2, .h2 {
+  font-family: $ff-alt;
+  line-height: 1;
+
+  @include rem(font-size, 40px);
+  @include rem(margin-bottom, 67px);
+}
+
+h3, .h3 {
+  font-family: $ff-alt;
+  line-height: 1;
+  font-weight: bold;
+
+  @include rem(font-size, 26px);
+  @include rem(margin-bottom, 10px);
+
 }
 
 h3.subtitle {
-  font-size: 30px;
   line-height: 1.33;
   font-family: $ff-alt;
   font-weight: normal;
   text-transform: none;
   float: none;
+  color: #657180;
+  margin-top: 0;
 
   @include rem(font-size, 30px);
   @include rem(margin-bottom, 60px);
@@ -280,12 +319,18 @@ p.lead {
 ol.list_styled {
   list-style: none;
   padding-left: 0 !important;
+  line-height: 1.67;
+  padding-bottom: 1px;
+
+  @include rem(font-size, 18px);
+  @include rem(margin-bottom, 20px);
 
   li {
     position: relative;
     counter-increment: step-counter;
 
     @include rem(padding-left, 44px);
+    @include rem(margin-bottom, 16px);
 
     &:before {
       content: counter(step-counter);
