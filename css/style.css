@@ -2147,6 +2147,10 @@ hr { max-width: none; width: 100%; border: 0; border-bottom: 1px solid #ebedef; 
 
 .hgroup { margin-bottom: 25px; margin-bottom: 1.5625rem; margin-top: 55px; margin-top: 3.4375rem; }
 
+.hgroup .btn--icon { color: #0388ef !important; }
+
+.hgroup .btn--icon:hover { color: rgba(3, 136, 239, 0.8) !important; }
+
 .hgroup:first-child { margin-top: 0; }
 
 h1, .h1 { font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1; font-size: 60px; font-size: 3.75rem; margin-bottom: 20px; margin-bottom: 1.25rem; }
@@ -2252,6 +2256,12 @@ pre { border-radius: 8px; background-color: #f7f8f9; border: solid 1px #ebedef; 
 ._open_cutted_content.active .hidden-if-active { display: none; }
 
 ._open_cutted_content.active .visible-if-active { display: block; }
+
+.modal--text .modal__dialog { width: 570px; max-width: 100%; }
+
+.modal--text .text { margin-top: 15px; }
+
+.modal--text a { font-weight: getFontWeight(semibold); }
 
 .form_group { margin-bottom: 20px; margin-bottom: 1.25rem; }
 
