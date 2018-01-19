@@ -17,9 +17,9 @@
     "node-sass": "^4.7.2"
   },
   "dependencies": {
-    "bootstrap-select": "1.12.0",
-    "clipboard": "^1.5.15",
+    "bootstrap-select": "^1.12.0",
+    "clipboard": "^1.7.1",
     "eonasdan-bootstrap-datetimepicker": "git+https://github.com/Eonasdan/bootstrap-datetimepicker.git",
-    "jquery": "1.12.4"
+    "jquery": "^1.12.4"
   }
 }

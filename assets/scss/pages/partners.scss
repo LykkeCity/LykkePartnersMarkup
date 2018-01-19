@@ -181,6 +181,14 @@ hr {
   @include rem(margin-bottom, 25px);
   @include rem(margin-top, 55px);
 
+  .btn--icon {
+    color: $primary !important;
+
+    &:hover {
+      color: rgba($primary, .8) !important;
+    }
+  }
+
   &:first-child {
     margin-top: 0;
   }
@@ -526,6 +534,23 @@ pre {
     }
     .visible-if-active {
       display: block;
+    }
+  }
+}
+
+.modal {
+  &--text {
+    .modal__dialog {
+      width: 570px;
+      max-width: 100%;
+    }
+
+    .text {
+      margin-top: 15px;
+    }
+
+    a {
+      font-weight: getFontWeight(semibold);
     }
   }
 }
