@@ -554,3 +554,16 @@ pre {
     }
   }
 }
+
+.fade.in {
+  opacity: .5;
+}
+
+.modal_valign {
+  table-layout: fixed;
+  padding: 0 10px;
+}
+
+.modal .close {
+  z-index: 10;
+}
