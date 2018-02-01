@@ -1,0 +1,74 @@
+.small_block {
+  width: 570px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__header {
+    @include rem(margin-bottom, 40px);
+  }
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    color: #111111;
+    font-family: $ff-alt;
+
+    @include rem(font-size, 30px);
+  }
+
+  &__body {
+    color: #333;
+
+    @include rem(font-size, 22px);
+    @include rem(margin-bottom, 30px);
+
+    p {
+      color: inherit;
+      font-size: inherit;
+
+      @include rem(margin-bottom, 20px);
+    }
+  }
+
+  &__button {
+    text-align: center;
+
+    @include rem(margin, 45px 0);
+
+    .btn {
+      @include rem(min-width, 210px);
+    }
+  }
+
+  &__icon {
+    text-align: center;
+
+    @include rem(margin-bottom, 30px);
+
+    img {
+      width: auto;
+
+      @include rem(height, 90px);
+    }
+
+    .icon {
+      margin-right: 0;
+
+      @include rem(font-size, 32px);
+      @include rem(line-height, 64px);
+
+      &--done {
+        @include rem(font-size, 24px);
+        @include rem(line-height, 68px);
+      }
+    }
+  }
+
+
+  &--message {
+    padding: 5% 0;
+    padding: 2vH 0;
+  }
+}

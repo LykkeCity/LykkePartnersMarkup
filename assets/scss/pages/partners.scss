@@ -175,6 +175,13 @@ hr {
 
 .lead, .text .lead{
   color: inherit;
+
+  @include rem(margin-bottom, 60px);
+
+  a {
+    color: $primary;
+    font-weight: $fw-semi;
+  }
 }
 
 .hgroup {
@@ -186,6 +193,10 @@ hr {
 
     &:hover {
       color: rgba($primary, .8) !important;
+    }
+
+    .icon {
+      @include rem(font-size, 26px);
     }
   }
 
@@ -235,10 +246,17 @@ h3.subtitle {
 }
 
 p.lead {
-  @include rem(margin-bottom, 40px);
+  color: inherit;
+
+  @include rem(margin-bottom, 60px);
 
   + p.lead {
     @include rem(margin-top, -20px);
+  }
+
+  a {
+    color: $primary;
+    font-weight: $fw-semi;
   }
 }
 
@@ -566,4 +584,88 @@ pre {
 
 .modal .close {
   z-index: 10;
+}
+
+.btn_pay {
+  color: #111 !important;
+
+  @include rem(font-size, 16px);
+
+  .icon {
+    @include rem(font-size, 22px !important);
+    @include rem(margin-right, 10px);
+  }
+}
+
+.btn.btn_pay:hover {
+  color: $text !important;
+}
+
+.section_header {
+  text-align: center;
+}
+
+.nav_container {
+  text-align: center;
+
+  .nav_scroll {
+    display: inline-block;
+  }
+}
+
+.block_subscribe .btn--circle {
+  .icon {
+    @include rem(font-size, 20px);
+  }
+}
+
+.middot {
+  @include rem(margin, 0 5px);
+}
+
+.asset_link_list {
+  @include rem(margin-bottom, 60px);
+}
+
+.asset_link {
+  &__action {
+    @include rem(margin-bottom, -5px);
+
+    .btn--icon {
+      color: #111;
+
+      .icon {
+        @include rem(font-size, 28px);
+      }
+    }
+  }
+
+  &__title {
+    line-height: 1.39;
+  }
+
+  &__info {
+    @include rem(padding-right, 20px);
+  }
+
+  &--alt {
+    .asset_link {
+      &__title {
+        width: auto;
+        max-width: none;
+        white-space: normal;
+        display: inline;
+
+        @include rem(margin-right, 5px);
+      }
+
+      &__desc {
+        margin-left: 0;
+      }
+
+      &__info {
+        @include rem(padding-top, 3px);
+      }
+    }
+  }
 }

@@ -58,10 +58,6 @@
   position: relative;
 }
 
-.btn .icon {
-  @include rem(font-size, 26px);
-}
-
 .radio {
   position: relative;
   overflow: hidden;
@@ -339,7 +335,19 @@
 }
 
 .form__submit {
+  text-align: center;
+
   @include rem(padding, 14px 0);
+
+  .btn-block + .btn {
+    @include rem(margin-top, 10px);
+  }
+
+  .btn {
+    .icon {
+      @include rem(font-size, 20px);
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -349,5 +357,13 @@
 
   .form_container {
     padding-top: 20px;
+  }
+}
+
+.btn--icon {
+  &[disabled] {
+    background-color: transparent !important;
+    color: rgba(#111, .2) !important;
+    cursor: default;
   }
 }

@@ -18,10 +18,13 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/subscribe';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/support';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/apps';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/tabs';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
 
 // optional
 @import 'pages/partners';
 @import 'form';
+@import 'small_block';
 @import 'breadcrumbs';
 
 .fade {
