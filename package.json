@@ -20,6 +20,6 @@
     "bootstrap-select": "^1.12.4",
     "clipboard": "^1.7.1",
     "eonasdan-bootstrap-datetimepicker": "git+https://github.com/Eonasdan/bootstrap-datetimepicker.git",
-    "jquery": "^1.12.4"
+    "jquery": "3.0.0"
   }
 }

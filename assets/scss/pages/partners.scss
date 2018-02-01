@@ -557,6 +557,10 @@ pre {
 }
 
 .modal {
+  h3 {
+    @include rem(margin-bottom, 20px);
+  }
+
   &--text {
     .modal__dialog {
       width: 570px;
@@ -571,9 +575,28 @@ pre {
       font-weight: getFontWeight(semibold);
     }
   }
+
+  &--action {
+    .modal__dialog {
+      width: 470px;
+      max-width: 100%;
+    }
+  }
 }
 
-.fade.in {
+.qr_code {
+  margin: 0 auto;
+
+  @include rem(width, 200px);
+
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.modal-backdrop.fade.in {
   opacity: .5;
 }
 
