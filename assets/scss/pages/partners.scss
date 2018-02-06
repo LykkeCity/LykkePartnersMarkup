@@ -561,6 +561,14 @@ pre {
     @include rem(margin-bottom, 20px);
   }
 
+  .text-muted {
+    line-height: 1.5;
+    color: #8c94a0;
+
+    @include rem(font-size, 16px);
+    @include rem(margin-bottom, 24px);
+  }
+
   &--text {
     .modal__dialog {
       width: 570px;
@@ -572,7 +580,7 @@ pre {
     }
 
     a {
-      font-weight: getFontWeight(semibold);
+      font-weight: $fw-semi;
     }
   }
 
